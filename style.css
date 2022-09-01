@@ -1,0 +1,221 @@
+html {
+    box-sizing: border-box;
+    font-size: 80%;
+    margin: 0px;
+    height: 100%;
+}
+
+
+.header {
+    display: flex;
+}
+
+.logo {
+    justify-content: center;
+    margin: 2% 50% 0% 20%;
+}
+
+.contenedor {
+    max-width: 90rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3% 50% 0% 50%;
+}
+
+.secciones{
+    display : flex; 
+    border: 1px solid;
+    border-radius:40px;
+    background-color: white; 
+}
+
+@media(max-width: 768px){
+    .secciones{
+        display: block;
+    }
+
+}
+
+.seccion-izquierda {
+    margin: 0px 60px 0px 60px;
+}
+@media(max-width: 768px){
+    .seccion-izquierda{
+        margin: 0px -8px 0px -8px;
+    }
+}
+
+
+.input-texto {
+    width: 400px;
+    /*height: 250px;*/
+    font-size: 18px;
+    margin-top: 10px;
+    border: none;
+}
+
+@media(max-width: 768px){
+    .input-texto{
+        margin-left: 9px;
+        background-color: transparent;
+    }
+}
+
+.input-texto:focus {
+    border: none;
+    outline: none;
+}
+
+::placeholder {
+    color: #0A3871;
+}
+
+.intrucciones {
+    position: static;
+    font-size: 15px;
+}
+
+@media(max-width: 768px){
+    .intrucciones{
+        text-align: center;
+    }
+}
+
+
+.encriptar {
+    position: static;
+    margin-right: 20px;
+    margin-left: 5px;
+    font-size: 15px;
+    width: 150px;
+    height: 30px;
+    color: white;
+    background: #0A3871;
+    border: none;
+    border-radius: 20px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.encriptar:hover {
+    transform: scale(1.2);
+}
+
+@media(max-width: 768px){
+    .encriptar{
+        margin-left: 30px;
+    }
+}
+
+.desencriptar {
+    position: static;
+    margin-left: 20px;
+    font-size: 15px;
+    width: 150px;
+    height: 30px;
+    color: #0A3871;
+    background-color: #D8DFE8;
+    border: none;
+    border-radius: 20px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.desencriptar:hover {
+    transform: scale(1.2);
+}
+
+.seccion-derecha {
+    margin: 0px 60px 0px 60px;
+}
+@media(max-width: 768px){
+    .seccion-derecha{
+        margin: 5px -9px 0px 0px;
+    }
+}
+
+
+.mensaje {
+    background-image: url(./imagenes/Muñeco.jpg);
+    background-repeat: no-repeat;
+    font-size: 18px;
+    border: none;
+    width: 400px;
+    /*height: 250px;*/
+    margin-top: 10px;
+    color:#0A3871;
+}
+@media(max-width: 768px){
+    .mensaje{
+        width: 300px;
+        background-image: -10px 10px;
+        
+    }
+}
+
+
+.mensaje:focus {
+    border: none;
+    outline: none;
+}
+
+.titulo-mensaje {
+    width: 160px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 30%;
+    margin-top: -100px;
+}
+
+.mensaje-posterior {
+    width: 180px;
+    font-size: 16px;
+    text-align: center;
+    margin-left: 28%;
+}
+
+.div-copiar {
+    align-items: center;
+    margin-left: 80px;
+
+
+}
+
+.copiar {
+    visibility: hidden;
+    font-size: 15px;
+    width: 150px;
+    height: 30px;
+    color: #0A3871;
+    background-color: #D8DFE8;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 45px;
+
+}
+
+
+/*footer*/
+.footer-text {
+    font-style: italic;
+    color: #0A3871;
+    text-align: center;
+    font-size: 14px;
+
+}
+
+.footergeneral{
+    position: absolute; 
+    bottom: 0; 
+    width: 95%; 
+    height:30px;
+}
+@media(max-width: 768px){
+    .footer-text{
+        display: block;
+        margin-top: 100%;
+    }
+}
